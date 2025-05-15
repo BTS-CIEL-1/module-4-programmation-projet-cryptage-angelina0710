@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoSecure - Solution de Cryptage</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <h1>CyberScript</h1>
+        <p>Solution de cryptage sécurisée et simple d'utilisation</p>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Accueil</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="A-propos.html">À propos</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <button id="loginBtn" class="btn btn-primary"><a href="SignIn.html">Connexion</a></button>
+            
+        </div>
+    </nav>
+    
+    <!-- Contenu principal -->
+    <main>
+        <!-- Onglets pour choisir entre cryptage et décryptage -->
+        <div class="tabs">
+            <div class="tab active" data-tab="encrypt">Crypter</div>
+            <div class="tab" data-tab="decrypt">Décrypter</div>
+            <div class="tab" data-tab="rsa">Clés RSA</div>
+        </div>
+        
+        <!-- Contenu de l'onglet Cryptage -->
+        <div id="encrypt" class="tab-content active">
+            <div class="alert alert-success" id="encryptSuccess">Fichier crypté avec succès !</div>
+            <div class="alert alert-error" id="encryptError">Une erreur s'est produite lors du cryptage.</div>
+            
+            <h2>Crypter un fichier ou du texte</h2>
+            <p>Choisissez un fichier à crypter ou entrez du texte directement.</p>
+            
+            <div class="form-group">
+                <label for="encryptType">Que souhaitez-vous crypter ?</label>
+                <select id="encryptType">
+                    <option value="file">Un fichier</option>
+                    <option value="text">Du texte</option>
+                </select>
+            </div>
+            
+            <div id="encryptFileSection">
+                <div class="form-group">
+                    <label>Fichier à crypter</label>
+                    <div class="drag-drop-area" id="encryptDragDrop">
+                        <p>Glissez-déposez votre fichier ici ou</p>
+                        <input type="file" id="encryptFile" style="display: none;">
+                        <button class="btn btn-secondary" id="encryptFileBrowse">Parcourir</button>
+                        <p id="encryptFileName"></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="encryptTextSection" style="display: none;">
+                <div class="form-group">
+                    <label for="encryptText">Texte à crypter</label>
+                    <textarea id="encryptText" rows="6" maxlength="5000" placeholder="Entrez le texte à crypter..." class="styled-textarea"></textarea>
+                    <div class="character-counter">0/5000</div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="encryptKey">Clé de cryptage</label>
+                <input type="password" id="encryptKey" placeholder="Entrez une clé de cryptage sécurisée">
+                <small>Cette clé sera nécessaire pour décrypter le contenu. Conservez-la précieusement.</small>
+            </div>
+            
+            <div class="action-buttons">
+                <button class="btn btn-secondary" id="encryptReset">Réinitialiser</button>
+                <button class="btn btn-primary" id="encryptSubmit">Crypter</button>
+            </div>
+        </div>
+        
+        <!-- Contenu de l'onglet Décryptage -->
+        <div id="decrypt" class="tab-content">
+            <div class="alert alert-success" id="decryptSuccess">Fichier décrypté avec succès !</div>
+            <div class="alert alert-error" id="decryptError">Une erreur s'est produite lors du décryptage.</div>
+            
+            <h2>Décrypter un fichier ou du texte</h2>
+            <p>Choisissez un fichier à décrypter ou entrez du texte crypté directement.</p>
+            
+            <div class="form-group">
+                <label for="decryptType">Que souhaitez-vous décrypter ?</label>
+                <select id="decryptType">
+                    <option value="file">Un fichier</option>
+                    <option value="text">Du texte</option>
+                </select>
+            </div>
+            
+            <div id="decryptFileSection">
+                <div class="form-group">
+                    <label>Fichier à décrypter</label>
+                    <div class="drag-drop-area" id="decryptDragDrop">
+                        <p>Glissez-déposez votre fichier crypté ici ou</p>
+                        <input type="file" id="decryptFile" style="display: none;">
+                        <button class="btn btn-secondary" id="decryptFileBrowse">Parcourir</button>
+                        <p id="decryptFileName"></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="decryptTextSection" style="display: none;">
+                <div class="form-group">
+                    <label for="decryptText">Texte crypté</label>
+                    <textarea id="decryptText" rows="6" placeholder="Entrez le texte crypté..."></textarea>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="decryptKey">Clé de décryptage</label>
+                <input type="password" id="decryptKey" placeholder="Entrez la clé de décryptage">
+            </div>
+            
+            <div class="action-buttons">
+                <button class="btn btn-secondary" id="decryptReset">Réinitialiser</button>
+                <button class="btn btn-primary" id="decryptSubmit">Décrypter</button>
+            </div>
+        </div>
+
+
+
+        <!--RSA cryptage asymetrique-->
+        <div id="rsa" class="tab-content ">
+            <h2>Générateur de clés RSA</h2>
+            <button id="generateRSA">Générer mes clés RSA</button>
+
+            <div class="form-group">
+                <label>Clé publique :</label>
+                <textarea id="rsaPublicKey" rows="8" cols="80" readonly></textarea><br>
+                <button class="copyBtn" data-target="rsaPublicKey">Copier la clé publique</button>
+            </div>
+
+            <div class="form-group">
+                <label>Clé privée :</label>
+                <textarea id="rsaPrivateKey" rows="10" cols="80" readonly></textarea><br>
+                <button class="copyBtn" data-target="rsaPrivateKey">Copier la clé privée</button>
+            </div>
+
+            <button id="resetRSA">OK</button>
+
+        </div>
+
+    </main>
+    
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2025 CryptoSecure - Solution de cryptage professionnelle</p>
+    </footer>
+    
+    <!-- Écran de chargement -->
+    <div id="loadingOverlay">
+        <div class="spinner"></div>
+        <p id="loadingText">Traitement en cours...</p>
+    </div>
+
+
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/crypto-js@3.1.9-1/crypto-js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsencrypt/bin/jsencrypt.min.js"></script>
+    <script src="script.js"></script>
+    <script src="decrypt.js"></script>
+
+    
+</body>
+</html>

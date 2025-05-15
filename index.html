@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoSecure - Connexion</title>
+    <link rel="stylesheet" href="SignIn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Partie gauche - Branding -->
+        <div class="brand-side">
+            <div class="brand-content">
+                <div class="logo-container">
+                    <div class="logo">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h1>CyberCript</h1>
+                </div>
+                
+                <div class="tagline">
+                    <h2>Votre sécurité, notre priorité</h2>
+                    <p>Cryptez vos données sensibles avec une solution moderne, fiable et intuitive.</p>
+                </div>
+                
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Cryptage avancé</h3>
+                            <p>Algorithmes de cryptage de pointe pour protéger vos données.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Rapide et efficace</h3>
+                            <p>Cryptez et décryptez vos fichiers en quelques secondes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Confidentialité totale</h3>
+                            <p>Vos clés de cryptage ne quittent jamais votre appareil.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="particles">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Partie droite - Formulaire de connexion -->
+        
+            
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Connexion</h2>
+                    <p>Accédez à votre espace sécurisé</p>
+                </div>
+                
+                <div class="login-tabs">
+                    <div class="tab active" data-tab="login">Connexion</div>
+                    <div class="tab" data-tab="register">Inscription</div>
+                </div>
+                
+                <!-- Formulaire de connexion -->
+                <form id="login-form" class="tab-content active">
+                    <div class="input-group">
+                        <div class="input-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <input type="email" id="login-email" placeholder="Adresse e-mail" required>
+                        <label for="login-email">Adresse e-mail</label>
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="input-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <input type="password" id="login-password" placeholder="Mot de passe" required>
+                        <label for="login-password">Mot de passe</label>
+                        <button type="button" class="toggle-password">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Se souvenir de moi</label>
+                        </div>
+                        <a href="#" class="forgot-password">Mot de passe oublié ?</a>
+                        <a href="cryptage.html" class="forgot-password">cryptage</a>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Se connecter</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                    </button>
+                    
+                    
+                </form>
+                
+                <!-- Formulaire d'inscription -->
+                <form id="register-form" class="tab-content">
+                    <div class="input-group">
+                        <div class="input-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <input type="text" id="register-name" placeholder="Nom complet" required>
+                        <label for="register-name">Nom complet</label>
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="input-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <input type="email" id="register-email" placeholder="Adresse e-mail" required>
+                        <label for="register-email">Adresse e-mail</label>
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="input-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <input type="password" id="register-password" placeholder="Mot de passe" required>
+                        <label for="register-password">Mot de passe</label>
+                        <button type="button" class="toggle-password">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="input-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <input type="password" id="register-confirm" placeholder="Confirmer le mot de passe" required>
+                        <label for="register-confirm">Confirmer le mot de passe</label>
+                        <button type="button" class="toggle-password">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="accept-terms" required>
+                            <label for="accept-terms">J'accepte les <a href="#">conditions d'utilisation</a></label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">S'inscrire</span>
+                        <span class="btn-icon"><i class="fas fa-user-plus"></i></span>
+                    </button>
+                    
+                    <div class="divider">
+                        <span>ou inscrivez-vous avec</span>
+                    </div>
+                    
+                    <div class="social-login">
+                        <button type="button" class="social-btn google">
+                            <i class="fab fa-google"></i>
+                            <span>Google</span>
+                        </button>
+                        <button type="button" class="social-btn microsoft">
+                            <i class="fab fa-microsoft"></i>
+                            <span>Microsoft</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Script pour gérer les onglets et les interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Gestion des onglets
+            const tabs = document.querySelectorAll('.login-tabs .tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Désactiver tous les onglets et contenus
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    
+                    // Activer l'onglet et le contenu sélectionnés
+                    this.classList.add('active');
+                    document.getElementById(tabId + '-form').classList.add('active');
+                });
+            });
+            
+            // Gestion des boutons pour afficher/masquer le mot de passe
+            const toggleButtons = document.querySelectorAll('.toggle-password');
+            
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const input = this.previousElementSibling.previousElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    if (input.type === 'password') {
+                        input.type = 'text';
+                        icon.classList.replace('fa-eye', 'fa-eye-slash');
+                    } else {
+                        input.type = 'password';
+                        icon.classList.replace('fa-eye-slash', 'fa-eye');
+                    }
+                });
+            });
+            
+            // Animation des boutons
+            const submitButtons = document.querySelectorAll('.submit-btn');
+            
+            submitButtons.forEach(button => {
+                button.addEventListener('mouseenter', function() {
+                    this.querySelector('.btn-icon').style.width = '3rem';
+                    this.querySelector('.btn-text').style.transform = 'translateX(-0.5rem)';
+                });
+                
+                button.addEventListener('mouseleave', function() {
+                    this.querySelector('.btn-icon').style.width = '0';
+                    this.querySelector('.btn-text').style.transform = 'translateX(0)';
+                });
+            });
+        });
+
+        const loginForm = document.getElementById('login-form');
+        const registerForm = document.getElementById('register-form');
+
+        // Gérer l'inscription
+        registerForm.addEventListener('submit', async function(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('register-name').value;
+            const email = document.getElementById('register-email').value;
+            const password = document.getElementById('register-password').value;
+
+            const response = await fetch('/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name, email, password })
+            });
+
+            const result = await response.json();
+            alert(result.message);
+        });
+
+        // Gérer la connexion
+        loginForm.addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+
+            const response = await fetch('/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email, password })
+            });
+
+            const result = await response.json();
+            alert(result.message);
+
+            // Si la connexion est réussie, rediriger vers cryptage.html
+            if (response.ok) {
+                window.location.href = 'cryptage.html'; // Rediriger vers cryptage.html
+            }
+        });
+    
+    </script>
+
+    
+
+</body>
+</html>

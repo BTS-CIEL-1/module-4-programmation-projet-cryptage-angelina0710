@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybercrypt - Solution de Cryptage</title>
+    <link rel="stylesheet" href="documentation.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <h1>Cybercrypt</h1>
+        <p>Solution de cryptage sécurisée et simple d'utilisation</p>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="cryptage.html">Accueil</a></li>
+            <li><a href="documentation.html" class="active" id="doc-nav-link">Documentation</a></li>
+            <li><a href="A-propos.html">À propos</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <button class="btn btn-primary"><a href="index.html" style="color: white; text-decoration: none;">Connexion</a></button>
+        </div>
+    </nav>
+    
+    <!-- Contenu principal -->
+    <main>
+        <div class="content-section">
+            <h2>Introduction à Cybercrypt</h2>
+            <p>Cybercrypt est une solution de cryptage sécurisée qui vous permet de protéger vos fichiers et messages texte sensibles. Notre application utilise des algorithmes de cryptage robustes pour garantir la confidentialité de vos données.</p>
+            
+            <div class="alert alert-info">
+                <strong>Important:</strong> Cybercrypt fonctionne entièrement dans votre navigateur. Aucune donnée n'est envoyée à nos serveurs, ce qui garantit un niveau de confidentialité optimal.
+            </div>
+            
+            <div class="screenshot">
+                <img src="image.png" alt="Aperçu de l'interface Cybercrypt">
+                <figcaption>Interface principale de Cybercrypt</figcaption>
+            </div>
+        </div>
+        
+        <div class="content-section">
+            <h2>Table des matières</h2>
+            <ul>
+                <li><a href="#demarrage">Guide de démarrage rapide</a></li>
+                <li><a href="#cryptage">Comment crypter des fichiers et du texte</a></li>
+                <li><a href="#decryptage">Comment décrypter des fichiers et du texte</a></li>
+                <li><a href="#bonnes-pratiques">Bonnes pratiques de sécurité</a></li>
+                <li><a href="#faq">Questions fréquemment posées</a></li>
+                <li><a href="#resolution-problemes">Résolution des problèmes courants</a></li>
+            </ul>
+        </div>
+        
+        <div class="content-section" id="demarrage">
+            <h2>Guide de démarrage rapide</h2>
+            <p>Pour commencer à utiliser Cybercrypt, suivez ces étapes simples :</p>
+            
+            <ol>
+                <li>Accédez à la page d'accueil en cliquant sur "Accueil" dans le menu de navigation.</li>
+                <li>Choisissez l'onglet "Crypter" ou "Décrypter" selon votre besoin.</li>
+                <li>Sélectionnez le type de contenu (fichier ou texte) que vous souhaitez traiter.</li>
+                <li>Fournissez le contenu à traiter et une clé de cryptage/décryptage.</li>
+                <li>Cliquez sur le bouton "Crypter" ou "Décrypter" pour lancer l'opération.</li>
+            </ol>
+            
+            <div class="screenshot">
+                <img src="image1.png" alt="Guide de démarrage rapide">
+                <figcaption>Interface utilisateur avec les différentes options disponibles</figcaption>
+            </div>
+        </div>
+        
+        <div class="content-section" id="cryptage">
+            <h2>Comment crypter des fichiers et du texte</h2>
+            
+            <h3>Cryptage de fichiers</h3>
+            <p>Pour crypter un fichier, suivez ces étapes :</p>
+            
+            <ol>
+                <li>Sur la page d'accueil, assurez-vous que l'onglet "Crypter" est sélectionné.</li>
+                <li>Dans le menu déroulant, choisissez "Un fichier".</li>
+                <li>Glissez-déposez votre fichier dans la zone prévue ou cliquez sur "Parcourir" pour le sélectionner depuis votre ordinateur.</li>
+                <li>Entrez une clé de cryptage sécurisée. <strong>N'oubliez pas cette clé</strong> car elle sera nécessaire pour décrypter le fichier ultérieurement.</li>
+                <li>Cliquez sur le bouton "Crypter".</li>
+                <li>Une fois le traitement terminé, le fichier crypté sera automatiquement téléchargé sur votre appareil.</li>
+            </ol>
+            
+            
+            
+            <h3>Cryptage de texte</h3>
+            <p>Pour crypter du texte, procédez comme suit :</p>
+            
+            <ol>
+                <li>Sur la page d'accueil, assurez-vous que l'onglet "Crypter" est sélectionné.</li>
+                <li>Dans le menu déroulant, choisissez "Du texte".</li>
+                <li>Entrez ou collez le texte que vous souhaitez crypter dans la zone de texte.</li>
+                <li>Spécifiez une clé de cryptage sécurisée. <strong>Conservez cette clé</strong> car elle sera indispensable pour décrypter le texte.</li>
+                <li>Cliquez sur le bouton "Crypter".</li>
+                <li>Le texte crypté s'affichera à l'écran. Vous pourrez le copier ou le télécharger.</li>
+            </ol>
+            
+            
+        </div>
+        
+        <div class="content-section" id="decryptage">
+            <h2>Comment décrypter des fichiers et du texte</h2>
+            
+            <h3>Décryptage de fichiers</h3>
+            <p>Pour décrypter un fichier précédemment crypté avec Cybercrypt :</p>
+            
+            <ol>
+                <li>Sur la page d'accueil, cliquez sur l'onglet "Décrypter".</li>
+                <li>Dans le menu déroulant, sélectionnez "Un fichier".</li>
+                <li>Glissez-déposez le fichier crypté dans la zone prévue ou utilisez le bouton "Parcourir" pour le localiser.</li>
+                <li>Entrez la clé de décryptage (la même que celle utilisée pour crypter le fichier).</li>
+                <li>Cliquez sur le bouton "Décrypter".</li>
+                <li>Une fois le traitement terminé, le fichier d'origine sera téléchargé sur votre appareil.</li>
+            </ol>
+            
+            
+            
+            <h3>Décryptage de texte</h3>
+            <p>Pour décrypter un message texte :</p>
+            
+            <ol>
+                <li>Sur la page d'accueil, cliquez sur l'onglet "Décrypter".</li>
+                <li>Dans le menu déroulant, choisissez "Du texte".</li>
+                <li>Collez le texte crypté dans la zone de texte prévue.</li>
+                <li>Entrez la clé de décryptage (la même que celle utilisée pour crypter le message).</li>
+                <li>Cliquez sur le bouton "Décrypter".</li>
+                <li>Le texte en clair s'affichera à l'écran.</li>
+            </ol>
+            
+            
+        </div>
+        
+        <div class="content-section" id="bonnes-pratiques">
+            <h2>Bonnes pratiques de sécurité</h2>
+            
+            <p>Pour maximiser la sécurité de vos données avec Cybercrypt, suivez ces recommandations :</p>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>Choisissez des clés fortes</h4>
+                    <p>Utilisez des clés de cryptage complexes comprenant au moins 12 caractères avec un mélange de lettres, chiffres et symboles.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h4>Stockez vos clés en sécurité</h4>
+                    <p>Conservez vos clés de cryptage dans un gestionnaire de mots de passe sécurisé et évitez de les noter sur des supports physiques non protégés.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h4>Évitez les réseaux publics</h4>
+                    <p>Lorsque vous utilisez Cybercrypt pour traiter des données sensibles, privilégiez une connexion Internet sécurisée plutôt qu'un réseau Wi-Fi public.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h4>Effacez votre cache</h4>
+                    <p>Après avoir utilisé Cybercrypt, pensez à effacer l'historique et le cache de votre navigateur pour éliminer toute trace temporaire.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h4>Utilisez un navigateur à jour</h4>
+                    <p>Assurez-vous que votre navigateur est à jour pour bénéficier des dernières protections de sécurité lors de l'utilisation de Cybercrypt.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h4>Vérifiez l'URL</h4>
+                    <p>Avant d'utiliser Cybercrypt, vérifiez que vous êtes bien sur le site officiel pour éviter les sites malveillants cherchant à récupérer vos données.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-section" id="faq">
+            <h2>Questions fréquemment posées</h2>
+            
+            <h3>Comment fonctionne le cryptage dans Cybercrypt ?</h3>
+            <p>Cybercrypt transforme vos fichiers et textes en un code illisible grâce à une clé secrète, code choisi par l’utilisateur . Sans cette clé, il est impossible de lire ou récupérer vos données.</p>
+            
+            <h3>Mes données sont-elles envoyées à vos serveurs lors du cryptage ?</h3>
+            <p>Non. Cybercrypt fonctionne entièrement dans votre navigateur (client-side). Vos données et clés de cryptage ne quittent jamais votre appareil, ce qui garantit un niveau de confidentialité maximal.</p>
+            
+            <h3>Que faire si j'ai oublié ma clé de cryptage ?</h3>
+            <p>Malheureusement, si vous perdez votre clé de cryptage, il n'existe aucun moyen de récupérer vos données cryptées. C'est pourquoi nous insistons sur l'importance de conserver vos clés en lieu sûr.</p>
+            
+            <h3>Puis-je utiliser Cybercrypt sur mobile ?</h3>
+            <p>Oui, Cybercrypt est compatible avec les navigateurs modernes sur les appareils mobiles. L'interface s'adapte automatiquement à la taille de votre écran pour une expérience optimale.</p>
+            
+            <h3>Y a-t-il une limite de taille pour les fichiers à crypter ?</h3>
+            <p>Pour des raisons de performance liées au traitement dans le navigateur, nous recommandons de limiter la taille des fichiers à environ 100 Mo. Au-delà, le processus peut prendre beaucoup de temps ou causer des problèmes de mémoire sur certains appareils.</p>
+            
+            <h3>Comment puis-je vérifier que mon fichier a été correctement crypté ?</h3>
+            <p>Les fichiers cryptés avec Cybercrypt portent l'extension ".crypted" et ne sont pas lisibles avec des applications standards. Pour vérifier le cryptage, vous pouvez essayer d'ouvrir le fichier avec un éditeur de texte : il devrait afficher des caractères illisibles.</p>
+        </div>
+        
+        <div class="content-section" id="resolution-problemes">
+            <h2>Résolution des problèmes courants</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Problème</th>
+                        <th>Cause possible</th>
+                        <th>Solution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Message d'erreur lors du cryptage</td>
+                        <td>Fichier trop volumineux ou navigateur manquant de mémoire</td>
+                        <td>Essayez avec un fichier plus petit ou fermez d'autres onglets et applications pour libérer de la mémoire</td>
+                    </tr>
+                    <tr>
+                        <td>Le fichier décrypté est corrompu</td>
+                        <td>Clé de décryptage incorrecte ou fichier modifié</td>
+                        <td>Vérifiez que vous utilisez la bonne clé et que le fichier crypté n'a pas été altéré</td>
+                    </tr>
+                    <tr>
+                        <td>Le bouton "Crypter" ne répond pas</td>
+                        <td>JavaScript désactivé ou erreur de script</td>
+                        <td>Vérifiez que JavaScript est activé dans votre navigateur et essayez de rafraîchir la page</td>
+                    </tr>
+                    <tr>
+                        <td>Le téléchargement ne démarre pas</td>
+                        <td>Bloqueur de pop-up actif ou problème de permissions</td>
+                        <td>Désactivez temporairement votre bloqueur de pop-up et vérifiez les permissions de téléchargement</td>
+                    </tr>
+                    <tr>
+                        <td>Temps de traitement très long</td>
+                        <td>Fichier volumineux ou performances limitées de l'appareil</td>
+                        <td>Soyez patient avec les gros fichiers ou essayez sur un appareil plus puissant</td>
+                    </tr>
+                    <tr>
+                        <td>Message "Format non reconnu" lors du décryptage</td>
+                        <td>Le fichier n'a pas été crypté avec Cybercrypt</td>
+                        <td>Assurez-vous que le fichier a bien été crypté avec notre application</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="alert alert-info">
+                <strong>Besoin d'aide supplémentaire ?</strong> Si vous rencontrez un problème qui n'est pas répertorié ici, n'hésitez pas à contacter notre équipe de support à l'adresse support@cybercrypt.com.
+            </div>
+        </div>
+    </main>
+    
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2025 CryptoSecure - Solution de cryptage professionnelle</p>
+    </footer>
+    
+    <script>
+        // Script pour gérer les ancres dans la navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            
+            for (const link of links) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 20,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            }
+        });
+    </script>  
+    
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2025 CryptoSecure - Solution de cryptage professionnelle</p>
+    </footer>
+    
+    <!-- Écran de chargement -->
+    <div id="loadingOverlay">
+        <div class="spinner"></div>
+        <p id="loadingText">Traitement en cours...</p>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
